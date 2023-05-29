@@ -8,7 +8,7 @@
         <div class="socials d-flex align-items-center gap-3">
             <h4 class="text-primary text-uppercase mb-0"> <strong>follow us</strong></h4>
             <ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 gap-3">
-                @foreach ($socials as $social)
+                @foreach ($db['socials'] as $social)
                 <li>
                     <a href="#"><img width="25" src="{{Vite::asset('resources/img/footer-'.$social) }}" alt="{{$social}} Logo"></a>
                 </li>

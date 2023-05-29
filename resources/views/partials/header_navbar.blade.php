@@ -5,7 +5,7 @@
         </div>
         <ul class="navbar_links d-flex justify-content-center align-items-center gap-3">
 
-            @foreach($links as $link)
+            @foreach($db['links'] as $link)
             <li class="text-uppercase text-decoration-none list-unstyled">
                 <strong> {{ $link }} </strong>
             </li>
