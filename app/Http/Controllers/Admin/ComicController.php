@@ -27,7 +27,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-
+        $db = config('db');
+        return view('admin.comics.create', compact('db'));
     }
 
     /**
@@ -49,7 +50,8 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        return view('admin.comics.show', compact('comic'));
+        $db = config('db');
+        return view('admin.comics.show', compact('comic', 'db'));
     }
 
     /**
