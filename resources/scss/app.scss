@@ -1,1 +1,33 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+.jumbotron{
+        height: 400px;
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
+        background-position: top center;
+}
+.card_section{
+    p{
+        font-size: 0.8rem;
+    }
+}
+footer{
+    font-size: 0.7rem;
+
+    .top_footer {
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;
+        overflow: hidden;
+        height: 399px;
+
+    .footer_logo {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translate(0, -50%);
+            scale: 0.8;
+        };
+    }
+
+}
