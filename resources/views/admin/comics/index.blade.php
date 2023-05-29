@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-<a class="btn btn-dark" href="{{route('comics.create')}}">Add New File</a>
+    <a class="btn btn-dark" href="{{route('comics.create')}}">Add New File</a>
     <table class="table-responsive table-primary">
         <thead>
             <tr>
