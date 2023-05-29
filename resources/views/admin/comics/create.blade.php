@@ -49,8 +49,8 @@
         </div>
         <div class="mb-3 row">
             <div class="text-center d-flex justify-content-center align-items-center">
+                <button type="reset" class="btn btn-secondary">Reset</button>
                 <button type="submit" class="btn btn-primary">Action</button>
-                <button type="reset" class="btn btn-primary">Reset</button>
             </div>
         </div>
     </form>

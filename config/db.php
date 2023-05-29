@@ -269,7 +269,7 @@ return [
         'news' => 'news',
     ],
 ],
-'comics' => config('db'),
+
 'socials' => [
     "facebook.png",
     "twitter.png",
