@@ -1,6 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
 
-
+.top_header{
+    a{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 0.25 0.5rem;
+    };
+}
 .jumbotron{
         height: 400px;
         background-image: url('../img/jumbotron.jpg');

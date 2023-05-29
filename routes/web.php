@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guests\PageController;
-use App\Models\Admin\ComicController;
+use App\Http\Controllers\Admin\ComicController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
