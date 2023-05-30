@@ -41,8 +41,10 @@
             <label for="type" class="col-4 col-form-label">Add a comic type</label>
             <input type="text" name="type" id="type" class="form-control" name="type" id="inputType" placeholder="type" value="{{$comic->type}}">
         </div>
-        <button class="btn btn-secondary" type="reset">Reset</button>
-        <button class="btn btn-primary" type="submit">Update</button>
+        <div class="text-center my-3">
+            <button class="btn btn-secondary" type="reset">Reset</button>
+            <button class="btn btn-primary" type="submit">Update</button>
+        </div>
     </form>
 </div>
 @endsection

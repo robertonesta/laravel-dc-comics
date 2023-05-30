@@ -40,24 +40,24 @@
                     <td>{{$comic->sale_date}}</td>
                     <td>{{$comic->type}}</td>
                     <td class="text-center">
-                        <a class="btn-primary" href="{{route('comics.show', $comic->id)}}"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <a class="btn-secondary" href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{$comic->id}}">
+                        <a class="btn btn-primary mb-2" href="{{route('comics.show', $comic->id)}}"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="btn btn-secondary mb-2" href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a>
+                        <a type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#modal-{{$comic->id}}">
                             <i class="fas fa-trash fa-sm fa-fw"></i> 
-                        </button>
+                        </a>
                         
                         <div class="modal fade" id="modal-{{$comic->id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-{{$comic->id}}" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header d-flex flex-column">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                         <h5 class="modal-title" id="modalTitle-{{$comic->id}}">Delete {{$comic->title}}</h5>
                                         <img width="100" src="{{$comic->thumb}}" alt="">
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                     </div>
                                     <div class="modal-body">
                                         Are you sure you want delete this element? This is a no-return action.
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer d-flex justify-content-center align-items-center gap-2">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                         <form action="{{route('comics.destroy', $comic->id)}}" method="post">
                                             @csrf
