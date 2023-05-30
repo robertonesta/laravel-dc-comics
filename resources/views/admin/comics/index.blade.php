@@ -43,8 +43,7 @@
                         <a class="btn-primary" href="{{route('comics.show', $comic->id)}}"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a class="btn-secondary" href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{$comic->id}}">
-                            <i class="fas fa-trash fa-sm fa-fw"></i>
-                            
+                            <i class="fas fa-trash fa-sm fa-fw"></i> 
                         </button>
                         
                         <div class="modal fade" id="modal-{{$comic->id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-{{$comic->id}}" aria-hidden="true">
