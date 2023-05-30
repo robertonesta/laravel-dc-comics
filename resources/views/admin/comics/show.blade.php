@@ -7,8 +7,8 @@
             <div class="card-header">
                 <img src="{{$comic->thumb}}" alt="">
             </div>
-                <div class="card-body">
-                    <h3>{{$comic->id}} : {{$comic->title}}</h3>
+            <div class="card-body text-start">
+                    <h3 class="text-center">{{$comic->id}} : {{$comic->title}}</h3>
                     <p> <strong>Description: </strong>{{$comic->description}}</p>
                     <p> <strong>Price: </strong>{{$comic->price}}</p>
                     <p> <strong>Series: </strong>{{$comic->series}}</p>
