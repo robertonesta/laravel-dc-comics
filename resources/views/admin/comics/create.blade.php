@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-    <form action="{{route('comics.store')}}" method="post">
+    <form class="my-3" action="{{route('comics.store')}}" method="post">
         @csrf
         <div class="mb-3 row">
             <label for="title" class="col-2 col-form-label text-white">Name</label>
@@ -47,7 +47,7 @@
                 <input type="text" class="form-control" name="type" id="type" placeholder="Add a type">
             </div>
         </div>
-        <div class="mb-3 row">
+        <div class="mb-3 row d-flex justify-content-between align-items-center">
             <div class="text-center d-flex justify-content-center align-items-center">
                 <button type="reset" class="btn btn-secondary">Reset</button>
                 <button type="submit" class="btn btn-primary">Action</button>
