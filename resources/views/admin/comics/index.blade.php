@@ -41,8 +41,9 @@
                         <div class="modal fade" id="modal-{{$comic->id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-{{$comic->id}}" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header d-flex flex-column">
                                         <h5 class="modal-title" id="modalTitle-{{$comic->id}}">Delete {{$comic->title}}</h5>
+                                        <img width="100" src="{{$comic->thumb}}" alt="">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -53,7 +54,7 @@
                                         <form action="{{route('comics.destroy', $comic->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="button" class="btn btn-danger">Confirm</button>
+                                            <button type="submit" class="btn btn-danger">Confirm</button>
                                         </form>
                                     </div>
 

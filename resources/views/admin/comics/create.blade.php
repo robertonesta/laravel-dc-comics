@@ -18,10 +18,8 @@
             </div>
         </div>
         <div class="mb-3 row">
-            <label for="description" class="col-2 col-form-label text-white">Description</label>
-            <div class="col-10">
-                <input type="text" class="form-control" name="description" id="description" placeholder="Add a description">
-            </div>
+            <label for="description" class="col-2 col-form-label"></label>
+            <textarea name="description" id="description" cols="10" rows="5">Add a comic description</textarea>
         </div>
         <div class="mb-3 row">
             <label for="price" class="col-2 col-form-label text-white">Price</label>
