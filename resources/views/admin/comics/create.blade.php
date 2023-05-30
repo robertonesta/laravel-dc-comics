@@ -19,7 +19,9 @@
         </div>
         <div class="mb-3 row">
             <label for="description" class="col-2 col-form-label"></label>
-            <textarea name="description" id="description" cols="10" rows="5">Add a comic description</textarea>
+            <div class="col-10">
+                <textarea class="w-100 form-control" name="description" id="description" cols="30" rows="5">Add a comic description</textarea>
+            </div>
         </div>
         <div class="mb-3 row">
             <label for="price" class="col-2 col-form-label text-white">Price</label>
