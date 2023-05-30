@@ -2,6 +2,15 @@
 
 @section('content')
 <div class="container">
+    @if(Session::has('message'))
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong>{{Session::get('message')}}</strong>
+    </div>
+    
+
+    
+    @endif
     <a class="btn btn-dark my-3" href="{{route('comics.create')}}">Add New File</a>
     <div class="table-responsive">
         <table class="table table-primary">
