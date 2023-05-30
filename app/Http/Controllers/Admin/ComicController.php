@@ -28,7 +28,7 @@ class ComicController extends Controller
     public function create()
     {
         $db = config('db');
-        return view('admin.comics.create', compact('db'));
+        return view('admin.comics.create', compact('db'))->with('message', 'new file added');
     }
 
     /**
@@ -97,7 +97,7 @@ class ComicController extends Controller
             "type" => $request->type
         ];
         $comic ->update($data);
-        return to_route('comics.index')->with('message', 'comic updated');
+        return to_route('comics.index')->with('message', 'file updated');
     }
 
     /**
