@@ -7,11 +7,11 @@
         <div class="card-header">
             <img src="{{$comic->thumb}}" alt="">
             <h3>{{$comic->id}} : {{$comic->title}}</h3>
-            <p>{{$comic->description}}</p>
-            <p>{{$comic->price}}</p>
-            <p>{{$comic->series}}</p>
-            <p>{{$comic->sale_date}}</p>
-            <p>{{$comic->type}}</p>
+            <p> <strong>Description: </strong>{{$comic->description}}</p>
+            <p> <strong>Price: </strong>{{$comic->price}}</p>
+            <p> <strong>Series: </strong>{{$comic->series}}</p>
+            <p> <strong>Sale Date: </strong>{{$comic->sale_date}}</p>
+            <p> <strong>Comic type: </strong>{{$comic->type}}</p>
         </div>
     </div>
 </div>

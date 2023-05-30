@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     @if(Session::has('message'))
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+    <div class="alert alert-primary alert-dismissible fade show text-center my-3" role="alert">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <strong>{{Session::get('message')}}</strong>
     </div>
@@ -66,13 +66,9 @@
                                             <button type="submit" class="btn btn-danger">Confirm</button>
                                         </form>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-                            
                     </td>
                 </tr>
                 @endforeach
