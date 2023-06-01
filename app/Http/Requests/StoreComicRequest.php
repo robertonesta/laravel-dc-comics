@@ -30,7 +30,7 @@ class StoreComicRequest extends FormRequest
 	        'description' => 'nullable',
             'series' => 'required|min:5|max:100',
             'type' => 'required|min:5|max:100',
-            'sale_date' => 'required|after:1900/01/01|before:CURDATE',
+            'sale_date' => 'required|after:1900/01/01|before:today',
         ];
     }
 }
