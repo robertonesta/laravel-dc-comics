@@ -3,9 +3,9 @@
 @section('content')
 <div class="bg-dark">
     <div class="container py-3">
-        <div class="card card-img text-center">
+        <div class="card card-img text-center shadow">
             <div class="card-header">
-                <img src="{{$comic->thumb}}" alt="">
+                <img width="300" src="{{$comic->thumb}}" alt="">
             </div>
             <div class="card-body text-start">
                     <h3 class="text-center">{{$comic->id}} : {{$comic->title}}</h3>
