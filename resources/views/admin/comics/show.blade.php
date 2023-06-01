@@ -8,12 +8,12 @@
                 <img width="300" src="{{$comic->thumb}}" alt="">
             </div>
             <div class="card-body text-start">
-                    <h3 class="text-center">{{$comic->id}} : {{$comic->title}}</h3>
-                    <p> <strong>Description: </strong>{{$comic->description}}</p>
-                    <p> <strong>Price: </strong>{{$comic->price}}</p>
-                    <p> <strong>Series: </strong>{{$comic->series}}</p>
-                    <p> <strong>Sale Date: </strong>{{$comic->sale_date}}</p>
-                    <p> <strong>Comic type: </strong>{{$comic->type}}</p>
+                <h3 class="text-center">{{$comic->id}} : {{$comic->title}}</h3>
+                <p><strong>Description: </strong>{{$comic->description}}</p>
+                <p><strong>Price: </strong>{{$comic->price}}</p>
+                <p><strong>Series: </strong>{{$comic->series}}</p>
+                <p><strong>Sale Date: </strong>{{$comic->sale_date}}</p>
+                <p><strong>Comic type: </strong>{{$comic->type}}</p>
             </div>
         </div>
     </div>
